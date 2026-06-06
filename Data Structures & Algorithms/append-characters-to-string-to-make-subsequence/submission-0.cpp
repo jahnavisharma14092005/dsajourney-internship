@@ -18,3 +18,8 @@ public:
         return t.size() - j;
     }
 };
+
+
+# SUBSEQ- we want coding in same order in s.. c,o,d,i,n,g one after another in s..My doubt- we already have ing in s then why we add ding from t.
+#  WE HAD TO RETURN MIN NUMBER OF CHARS TO BE ADDED FROM T- thats j-t.length();
+#  IF WE HAD TO RETURN APPENDED STRING - t.substr(j);
