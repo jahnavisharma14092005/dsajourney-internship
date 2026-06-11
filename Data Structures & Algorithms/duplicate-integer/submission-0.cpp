@@ -14,3 +14,6 @@ public:
     }
 
 };
+
+#MISTAKES- 1. DIDNT DO j++ after return true
+2. didnt return false; after closing for loop
