@@ -20,3 +20,9 @@ public:
         
     }
 };
+ MISTAKES- 
+     1.I DID FREQ[X]++ INSTEAD OF mp++
+     2. for(auto p:mp) in line 8 i wrote for(auto p:nums).we haver to iterate over frequencies which r stored in maps in key,value format.
+3. i wrote bucket(p.second) which is wrong Because bucket is a vector For vectors, we access elements using square brackets:
+4. i passed ans.push_back(bucket[i]) thats not allowed coz bucket is a vector nd ans.push_back expects int value only so we need for(int x:bucket[i])
+    
