@@ -39,3 +39,29 @@ public:
         
     }
 };
+
+#STANDARD WAY TO CREATE MAX HEAP
+priority_queue<int> pq;
+
+for(int x : stones)
+    pq.push(x);
+
+#MISTAKES-
+1. did if(a!=b)
+{
+int y=a-b;
+pq.push(y);
+}
+
+
+2. HEAP HAS FUNCTIONS LIKE
+    pq.push(x);        // Insert
+
+pq.pop();          // Remove top element
+
+pq.top();          // Access top element
+
+pq.size();         // Number of elements
+
+pq.empty();        // Check if empty
+
