@@ -4,3 +4,173 @@
 | **stack**                 | `push()`      | `pop()`      | `top()`             |
 | **queue**                 | `push()`      | `pop()`      | `front()`, `back()` |
 | **priority_queue (heap)** | `push()`      | `pop()`      | `top()`             |
+
+
+|--*-----------------------------------------------------------------------------------------|
+#HOW TO ITERATE THRU A MAP              #Each key has exactly ONE value.1 key 1 value no duplicate like k closest point ques where [1,1] and [-1,-1] have same dist 2.
+for(auto &p : mp)  auto p is for        #Many different things can have the same key.DONT USE MAP THEN.
+{                                            #USE WHEN 1 KEY HAS 1 VALUE .
+    cout << p.first << " " << p.second;      
+}
+|--*------------------------------------------------------------------------------------------|
+
+==================== HASH MAP PATTERNS ====================
+
+1. Need to count frequency?
+→ unordered_map
+
+Questions:
+• Top K Frequent Elements
+• Majority Element
+• Valid Anagram
+• Ransom Note
+• First Unique Character
+• Frequency of Characters
+
+
+-----------------------------------------------------------
+
+2. Need to know if an element is already seen?
+→ unordered_map
+
+Questions:
+• Two Sum
+• Contains Duplicate
+• Happy Number
+• Longest Consecutive Sequence
+
+
+-----------------------------------------------------------
+
+3. Need Value → Index mapping?
+→ unordered_map
+
+Questions:
+• Two Sum
+• Next Greater Element
+• Array Index Mapping problems
+
+
+-----------------------------------------------------------
+
+4. Need Character → Character / Character → Frequency mapping?
+→ unordered_map
+
+Questions:
+• Isomorphic Strings
+• Valid Anagram
+• Ransom Note
+• First Unique Character
+
+
+-----------------------------------------------------------
+
+5. Need one key to store MULTIPLE values?
+→ unordered_map<Key, vector<Value>>
+
+Questions:
+• Group Anagrams
+• Group Similar Elements
+• Categorization problems
+
+
+-----------------------------------------------------------
+
+6. Need Prefix Sum lookup?
+→ unordered_map
+
+Questions:
+• Subarray Sum Equals K
+• Continuous Subarray Sum
+• Prefix Sum problems
+
+
+==================== HEAP PATTERNS ====================
+
+1. Need largest element repeatedly?
+→ Max Heap (priority_queue)
+
+Questions:
+• Last Stone Weight
+• Heap Sort
+• Maximum Element problems
+
+
+-----------------------------------------------------------
+
+2. Need smallest element repeatedly?
+→ Min Heap
+
+Questions:
+• Merge K Sorted Lists
+• Smallest Range
+• Kth Smallest Element
+
+
+-----------------------------------------------------------
+
+3. Top K / Kth Largest / Kth Smallest?
+→ Heap
+
+Questions:
+• Kth Largest Element
+• Top K Frequent Elements
+• K Closest Points to Origin
+• Kth Largest in Stream
+
+
+==================== PAIR PATTERNS ====================
+
+1. Need to store TWO related values together?
+→ pair
+
+Examples:
+(frequency, number)
+(distance, point)
+(node, weight)
+(x, y)
+(value, index)
+
+Questions:
+• Top K Frequent (Heap)
+• K Closest Points
+• Dijkstra's Algorithm
+• Prim's Algorithm
+• Coordinate Problems
+
+
+==================== VECTOR PATTERNS ====================
+
+Need dynamic array?
+→ vector
+
+Questions:
+• Arrays
+• Sliding Window
+• Two Pointers
+• Prefix Sum
+• DP Arrays
+
+
+==================== FIRST QUESTION TO ASK ====================
+
+Need frequency?
+→ Map
+
+Need element already seen?
+→ Map
+
+Need value → index?
+→ Map
+
+Need largest/smallest repeatedly?
+→ Heap
+
+Need Top K?
+→ Heap
+
+Need to store two things together?
+→ Pair
+
+Need dynamic array?
+→ Vector
