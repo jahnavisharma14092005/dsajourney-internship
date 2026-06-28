@@ -1,0 +1,6 @@
+| Data Structure            | Insert        | Remove       | Access              |
+| ------------------------- | ------------- | ------------ | ------------------- |
+| **vector**                | `push_back()` | `pop_back()` | `front()`, `back()` |
+| **stack**                 | `push()`      | `pop()`      | `top()`             |
+| **queue**                 | `push()`      | `pop()`      | `front()`, `back()` |
+| **priority_queue (heap)** | `push()`      | `pop()`      | `top()`             |
