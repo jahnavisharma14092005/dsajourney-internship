@@ -174,3 +174,12 @@ Need to store two things together?
 
 Need dynamic array?
 → Vector
+
+TREEESSSS=====================================================================================
+
+| Structure   | Rule                                   |
+| ----------- | -------------------------------------- |
+| Tree        | Any number of children                 |
+| Binary Tree | Maximum 2 children                     |
+| BST         | Maximum 2 children **+ ordering rule** |
+THE ORDERING RULE IS LEFT VALS<ROOT AND RIGHT VALS>ROOT.
