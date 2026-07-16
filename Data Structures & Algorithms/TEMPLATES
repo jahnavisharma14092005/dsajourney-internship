@@ -1,0 +1,22 @@
+BFS TEMPLATE-
+
+queue<int> q;
+vector<bool> vis(n,false);
+
+q.push(source);
+vis[source]=true;
+
+while(!q.empty())
+{
+    int node=q.front();
+    q.pop();
+
+    for(auto child:adj[node])
+    {
+        if(!vis[child])
+        {
+            vis[child]=true;
+            q.push(child);
+        }
+    }
+}
