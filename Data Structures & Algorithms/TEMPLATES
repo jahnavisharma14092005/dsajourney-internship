@@ -20,3 +20,42 @@ while(!q.empty())
         }
     }
 }
+
+=====================================================================================
+DFS TEMPLATE
+void dfs(vector<vector<char>>& grid, int i, int j)
+{
+    // 1. Base Case
+    if(i < 0 || i >= m || j < 0 || j >= n)
+        return;
+
+    // 2. Stop Condition
+    if(grid[i][j] == '0')
+        return;
+
+    // 3. Mark Visited
+    grid[i][j] = '0';
+
+    // 4. Visit Neighbours
+    dfs(grid, i + 1, j);
+    dfs(grid, i - 1, j);
+    dfs(grid, i, j + 1);
+    dfs(grid, i, j - 1);
+}
+  MAIN FUNC-:
+ int answer = 0;
+
+for(int i = 0; i < m; i++)
+{
+    for(int j = 0; j < n; j++)
+    {
+        if(grid[i][j] == '1')
+        {
+            dfs(grid, i, j);
+            answer++;
+        }
+    }
+}
+
+return answer;
+==================================================================================================================
