@@ -23,7 +23,7 @@ while(!q.empty())
 
 =====================================================================================
 DFS TEMPLATE
-void dfs(vector<vector<char>>& grid, int i, int j)
+void dfs(vector<vector<char>>& grid, int i, int j)            
 {
     // 1. Base Case
     if(i < 0 || i >= m || j < 0 || j >= n)
@@ -58,4 +58,64 @@ for(int i = 0; i < m; i++)
 }
 
 return answer;
+==========================================================================##########NUMBER OF ISLANDS##########
+"1","1","0","0","1"],
+["1","1","0","0","1"],
+["0","0","1","0","0"],
+["0","0","0","1","1"]
+]
+
+Let's number the coordinates.
+
+      0   1   2   3   4
+   -----------------------
+0 |  1   1   0   0   1
+1 |  1   1   0   0   1
+2 |  0   0   1   0   0
+3 |  0   0   0   1   1
+Start scanning
+(0,0)
+
+It's 1.
+
+👉 Island count = 1
+
+Call:
+
+dfs(0,0)
+dfs(0,0)
+
+Mark visited.
+
+Now check
+
+Up ❌
+Down ✔ (1,0)
+Left ❌
+Right ✔ (0,1)
+
+Suppose our order is:
+
+Up
+Down
+Left
+Right
+
+So we first go to
+
+(1,0)
+dfs(1,0)
+
+Mark visited.
+
+Neighbors
+
+Up -> already visited
+Down -> 0
+Left -> invalid
+Right -> (1,1)
+
+Go to
+
+(1,1)
 ==================================================================================================================
