@@ -119,3 +119,30 @@ Go to
 
 (1,1)
 ==================================================================================================================
+  ########RECURSIVE DFS STANDARD TEMPLATE######
+
+void dfs(node){
+
+    mark visited;
+
+    for(each neighbour){                   
+
+        if(valid){
+
+            dfs(neighbour);
+
+        }
+    }
+}
+
+This template solves:
+
+Number of Islands ✅
+Max Area of Island ✅
+Flood Fill ✅
+Surrounded Regions ✅
+Clone Graph ✅
+Pacific Atlantic Water Flow ✅
+Connected Components ✅
+Course Schedule (with modifications) ✅
+===========================================================================================================================
