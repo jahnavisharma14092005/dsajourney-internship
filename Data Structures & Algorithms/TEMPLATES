@@ -146,3 +146,193 @@ Pacific Atlantic Water Flow ✅
 Connected Components ✅
 Course Schedule (with modifications) ✅
 ===========================================================================================================================
+ ########## DRY RUN OF DFS FOR SOLID UNDERSTANDING #############
+      Imagine you are the DFS
+
+Grid:
+
+1 1
+1 0
+
+Coordinates:
+
+      0   1
+   ----------
+0 |  1   1
+1 |  1   0
+
+Start scanning.
+
+You reach
+
+(0,0)
+
+It is land.
+
+You say
+
+I'll explore this entire island.
+
+So you call
+
+dfs(0,0)
+Step 2: What happens inside dfs(0,0)?
+
+Imagine you physically stand on cell
+
+(0,0)
+
+First thing you do
+
+✓ Mark visited
+
+Now you look around.
+
+Suppose order is
+
+Up
+Down
+Left
+Right
+
+You check
+
+Up → invalid ❌
+
+Down → (1,0) ✅
+
+Left → invalid ❌
+
+Right → (0,1) ✅
+
+Now here's the MOST IMPORTANT RULE.
+
+DFS DOES NOT GO TO BOTH.
+
+It chooses
+
+the FIRST valid neighbour.
+
+So it says
+
+I'll go Down first.
+
+Step 3
+
+Now you're standing here
+
+(1,0)
+
+Notice something.
+
+You COMPLETELY forgot
+
+(0,1)
+
+Not exactly.
+
+It is waiting.
+
+We'll see how.
+
+At
+
+(1,0)
+
+Again
+
+Mark visited.
+
+Check neighbours.
+
+Up → visited ❌
+
+Down → invalid ❌
+
+Left → invalid ❌
+
+Right → 0 ❌
+
+No more moves.
+
+Now what?
+
+Step 4
+
+Since there is nowhere else to go,
+
+you WALK BACK.
+
+You return to
+
+(0,0)
+
+This is called
+
+Backtracking
+
+Think of it like Google Maps.
+
+Dead end?
+
+Return.
+
+Step 5
+
+You're back at
+
+(0,0)
+
+Question:
+
+Did DFS finish?
+
+NO.
+
+Because remember
+
+Right → (0,1)
+
+was never explored.
+
+So now DFS says
+
+Let's check the next neighbour.
+
+Now it goes
+
+(0,1)
+Step 6
+
+Now you're standing
+
+(0,1)
+
+Mark visited.
+
+Check neighbours.
+
+Up ❌
+
+Down → 0
+
+Left → visited
+
+Right ❌
+
+Done.
+
+Return.
+
+Return again.
+
+Back to
+
+(0,0)
+
+No neighbours left.
+
+Return.
+
+Finished.
+================================================================================================================================================================
