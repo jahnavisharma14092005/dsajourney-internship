@@ -39,3 +39,9 @@ public:
         return islands;
     }
 };
+
+MISTAKES:-
+    1. grid[i][j]='0' means assign value 0 to this cell..i wrote grid[i][j]=='0' which is checking is this grid[i][j] 0?
+    2. I WAS CONFUSED HOW WILL BOTH FUNCTIONS ACCESS THINGS LIKE i and j WHEN THEY R COMMON TO BOTH FUNCTIONS,,so AS ITS DECLARED INSIDE INT NUMISLANDS FUNCTIONS THAT ITS A LOOP..
+        IN OTHER FUNCTION LIST IT AS A PARAMETER,,LIKE void dfs (vector<vector<char>>& grid,`int i,int j).
+    3. inside void dfs only work that dfs should do is written. number of islands calculation is inside int numIslands total nd we call dfs inside this.
