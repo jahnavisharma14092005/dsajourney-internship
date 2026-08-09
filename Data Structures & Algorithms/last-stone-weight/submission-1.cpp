@@ -18,45 +18,26 @@ public:
            }
 
            return stones.empty() ? 0:stones[0];
+
+
+
+
+           
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
     }
 };
-
-#FUNCTIONS IN VECTOR
-v.push_back(x);    // Insert at end
-
-v.pop_back();      // Remove last element
-
-v.erase(...);      // Remove any element
-
-v.size();          // Number of elements
-
-v.empty();         // Is vector empty?
-
-v.front();         // First element
-
-v.back();          // Last element
-
-v.clear();         // Remove all elements
-
-
-
-
-           
-
-           
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-    
-

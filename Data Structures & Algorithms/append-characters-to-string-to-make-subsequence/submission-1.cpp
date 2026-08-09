@@ -5,16 +5,20 @@ public:
         int j=0;
         while(i<s.size() && j<t.size())
         {
-            if(s[i]==t[j])
+            if(s[i]==t[i])
             {
                 i++;
                 j++;
             }
-            else{
+            else
+            {
                 i++;
             }
         }
-      
-        return t.size() - j;
+        
+          return t.size()-j;
+        
+
+        
     }
 };

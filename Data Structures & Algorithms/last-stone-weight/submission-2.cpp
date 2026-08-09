@@ -16,11 +16,11 @@ public:
                         pq.pop();
                         int b=pq.top();
                         pq.pop();
-                             
-                             
-                                
-                                pq.push(a-b);
-                             
+                             if(a!=b)
+                             {
+                                int y=(a-b);
+                                pq.push(y);
+                             }
 
 
                              
