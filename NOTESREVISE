@@ -183,6 +183,13 @@ TREEESSSS=======================================================================
 | Binary Tree | Maximum 2 children                     |
 | BST         | Maximum 2 children **+ ordering rule** |
 THE ORDERING RULE IS LEFT VALS<ROOT AND RIGHT VALS>ROOT.
-
+==================================================================================================
+mp[key] = value;       // store
+mp[key];               // access value
+mp.find(key);          // search
+mp.count(key);         // check existence
+mp.erase(key);         // delete
+mp.size();             // number of elements
+===============================================================================================
 
 
