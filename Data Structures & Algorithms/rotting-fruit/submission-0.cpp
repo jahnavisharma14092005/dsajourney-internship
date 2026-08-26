@@ -72,3 +72,11 @@ public:
         return ans;
     }
 };
+
+
+BFS :- 1. SUPPOSE WE R AT (3,3) RN SO IN BFS WHAT HAPPENS IS FROM THAT CELL NEIGHBORS WILL BE CHECKD DIRECTLY LEVEL BY LEVEL
+        2. MULTI-SOURCE BFS-- WHAT IF MORE THAN ONE CELL HAS 2
+         3. Yes/No → bool
+            Number → int
+            Character → char 
+    #### vector<vector<bool>> vis(n,vector <bool>(m,false)-
