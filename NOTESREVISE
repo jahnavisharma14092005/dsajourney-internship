@@ -191,5 +191,15 @@ mp.count(key);         // check existence
 mp.erase(key);         // delete
 mp.size();             // number of elements
 ===============================================================================================
+# LEARNED WHILE DOING ROTTEN ORANGES IN GRAPHS
+   1. SYNTAX-   queue<pair<pair<int,int>, int>> q;
+     inside to outside int was for time nd pair<int,int> for row and column.
+      WHICH IN THE END BECOMES {{row,column},time}.
 
+    BASIC UNDERSTANDING POINT HERE IS THAT --  A pair stores two values together.
+     pair<int, int> position = {2, 3};
+     Here:
+        - position.first is 2.
+            - position.second is 3.
+======================================================================================================
 
