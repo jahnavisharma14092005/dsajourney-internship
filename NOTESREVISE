@@ -202,5 +202,5 @@ mp.size();             // number of elements
         - position.first is 2.
             - position.second is 3.
 ======================================================================================================
-1. BFS IS USED IN GRAPHS WHEN SHORTEST PATH IS IN DISCUSSION..
+1. BFS IS USED IN GRAPHS WHEN SHORTEST PATH IS IN DISCUSSION.
 
